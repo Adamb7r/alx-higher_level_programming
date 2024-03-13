@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-for n in range(99):
-    num = str(n).zfill(2)
-    print(num, end=', ')
-print("99")
+for num in range(0, 99):
+    print('{:02d}, '.format(num), end='')
+print('99')
