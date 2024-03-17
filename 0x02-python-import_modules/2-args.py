@@ -5,8 +5,8 @@ if __name__ == "__main__":
 
     arguments = sys.argv[1:]
     if len(arguments) > 0:
-        print(f"{len(arguments)} arguments:", end="\n")
+        print("{} arguments:".format(len(arguments), end="\n"))
         for ch in arguments:
-            print(f"{arguments.index(ch)+1}: {ch}")
+            print("{}: {}".format(arguments.index(ch)+1, ch))
     else:
         print("0 arguments.")
