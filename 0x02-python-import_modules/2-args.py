@@ -9,4 +9,4 @@ if __name__ == "__main__":
         for ch in arguments:
             print(f"{arguments.index(ch)+1}: {ch}")
     else:
-        print(f"0 arguments.")
+        print("0 arguments.")
