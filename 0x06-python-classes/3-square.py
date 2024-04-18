@@ -1,14 +1,19 @@
 #!/usr/bin/python3
-"""Define a class Square."""
+"""Square Module."""
 
 
 class Square:
-    """Represent a square."""
+    """Define a square."""
 
     def __init__(self, size=0):
-        """Initialize a new square.
+        """Constructor.
+
         Args:
-            size (int): The size of the new square.
+            size: Lenght of a side of the square.
+
+        Raise:
+            TybeError: If size is not an integer
+            ValueError: If size is less than 0
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -17,6 +22,5 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Return the current area of the square."""
-        return (self.__size * self.__size)
-
+        """Return The Current Area Of The Square."""
+        return self.__size * self.__size
