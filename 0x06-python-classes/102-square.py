@@ -13,7 +13,6 @@ class Square:
 
     @property
     def size(self):
-        """Get/set the current size of the square."""
         return self._size
 
     @size.setter
@@ -27,3 +26,31 @@ class Square:
     def area(self):
         """Return the current area of the square."""
         return self.size ** 2
+
+    def __eq__(self, other):
+        if isinstance(other, Square):
+            return self.area() == other.area()
+        return False
+
+    def __ne__(self, other):
+        return not self.__eq__(other)
+
+    def __gt__(self, other):
+        if isinstance(other, Square):
+            return self.area() > other.area()
+        raise TypeError("unsupported".format(type(other).__name__))
+
+    def __ge__(self, other):
+        if isinstance(other, Square):
+            return self.area() >= other.area()
+        raise TypeError("unsupported".format(type(other).__name__))
+
+    def __lt__(self, other):
+        if isinstance(other, Square):
+            return self.area() < other.area()
+        raise TypeError("unsupported".format(type(other).__name__))
+
+    def __le__(self, other):
+        if isinstance(other, Square):
+            return self.area() <= other.area()
+        raise TypeError("unsupported".format(type(other).__name__))
