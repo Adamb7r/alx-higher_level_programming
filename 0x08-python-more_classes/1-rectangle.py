@@ -13,7 +13,7 @@ class Rectangle():
     def width(self):
         """ Retrives The Value Of Attribute Width. """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """ Sets The Value Of Attribute Width. """
@@ -27,7 +27,7 @@ class Rectangle():
     def height(self):
         """ Retrives The Value Of Attrinute Height. """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """ Sets The Value Of Attribute Height. """
