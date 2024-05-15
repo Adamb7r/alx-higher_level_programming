@@ -50,7 +50,7 @@ class Rectangle():
         """ print the rectangle with the character #. """
         ret = ""
         if self.__width == 0 or self.__height == 0:
-            return x
+            return ret
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#", end="")
